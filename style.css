@@ -10,7 +10,7 @@
 body {
     background: #f9f9f9;
     min-height: 100vh;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 header {
@@ -20,7 +20,7 @@ header {
     width: 100%;
     padding: 30px 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     z-index: 100;
 }
@@ -29,6 +29,7 @@ header {
     font-size: 2em;
     color: #359381;
     pointer-events: none;
+    margin-right: 270px;
 }
 
 .navigation a {
@@ -52,12 +53,14 @@ header {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 #text {
     position: absolute;
-    font-size: 5em;
-    color: #333
+    font-size: 7em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
 }
 
 .parallax img {
@@ -65,5 +68,26 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    height: 100vh;
     pointer-events: none;
+}
+
+
+.sec {
+    position: relative;
+    background: #003329;
+    padding: 100px;
+    z-index: -1;
+}
+
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
 }
