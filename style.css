@@ -91,3 +91,89 @@ header {
     color: #fff;
     font-weight: 300;
 }
+
+@media (max-width: 768px) {
+    /* Коррекция шрифта логотипа */
+    .logo {
+        font-size: 1.5em;
+        margin-right: 40px;
+    }
+
+    /* Меняем отступы в хедере */
+    header {
+        padding: 20px 50px;
+    }
+
+    /* Корректируем шрифты для навигации */
+    .navigation a {
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+
+    /* Центрируем текст и уменьшаем его размер для параллакса */
+    #text {
+        font-size: 5.2em;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Адаптация изображений параллакса */
+    .parallax img {
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Изменение отступов для секций */
+    .sec {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .sec h2 {
+        font-size: 2em;
+    }
+
+    .sec p {
+        font-size: 0.9em;
+    }
+
+    .parallax {
+        height: 67.5vh; 
+        overflow: hidden;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1em;
+        margin-right: 15px;
+    }
+
+    .navigation a {
+        padding: 5px 2px;
+        font-size: 0.8em;
+    }
+
+    #text {
+        font-size: 3em;
+        top: 50%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+    }
+
+    .sec h2 {
+        font-size: 1.8em;
+    }
+
+    .sec p {
+        font-size: 0.8em;
+    }
+
+    .parallax {
+        height: 42.4vh; 
+        overflow: hidden;
+    }
+}
